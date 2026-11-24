@@ -4,7 +4,7 @@
   "kpis": [
     { "value": "+31.5%", "label": "Nvidia rebound", "region": "N. AMERICA" },
     { "value": "15+ dead", "label": "Kyiv region strikes", "region": "EUROPE" },
-    { "value": "2,400 km", "label": "Ukraine strike to Libya", "region": "AFRICA" },
+    { "value": "14 bases", "label": "PKK Iraq withdrawal", "region": "MIDDLE EAST" },
     { "value": "$1.6B", "label": "India flood aid to Nepal", "region": "ASIA" },
     { "value": "14 hrs", "label": "Belgium airport strike", "region": "EUROPE" },
     { "value": "2031/35", "label": "FIFA Women's World Cups", "region": "GLOBAL" }
@@ -12,7 +12,7 @@
   "utc_timeline": [
     { "time": "03:15", "label": "Asian stocks slide" },
     { "time": "06:00", "label": "Belgian ATC strike" },
-    { "time": "08:00", "label": "Libya warship confirmed" },
+    { "time": "11:00", "label": "India $1.6B Nepal flood aid" },
     { "time": "17:30", "label": "EU Russia sanctions" },
     { "time": "21:10", "label": "Nvidia +31.5% rally" }
   ],
@@ -37,7 +37,7 @@
       "title": "EU unveils Russia sanctions as Kyiv strikes kill 15",
       "highlight": "Russia sanctions",
       "highlight_tone": "red",
-      "summary": "EU targets Russian banks, crypto & sports; overnight strikes hit Kyiv region & Perm refinery. (AP/AJ)",
+      "summary": "EU targets Russian banks, crypto & sports; Russian strikes kill 15+ in Kyiv region. (AP/AJ)",
       "lat": 50.85,
       "lon": 4.35
     },
@@ -58,12 +58,12 @@
     {
       "id": 4,
       "region": "AFRICA",
-      "location": "Benghazi",
-      "status": "CONFIRMED",
-      "title": "Kyiv confirms sea drones hit Russian ship",
-      "summary": "7 drones struck corvette Merkury 2,400 km from front; UN urges probe. (AP/UN)",
-      "lat": 32.12,
-      "lon": 20.07
+      "location": "Mogadishu",
+      "status": "OFFICIAL",
+      "title": "Somalia expels UAE envoy in sovereignty row",
+      "summary": "Mogadishu orders UAE ambassador out as Somaliland dispute escalates. (AP)",
+      "lat": 2.04,
+      "lon": 45.32
     },
     {
       "id": 5,
@@ -148,12 +148,12 @@
     {
       "id": 13,
       "region": "N. AMERICA",
-      "location": "N. Mexico",
+      "location": "New York",
       "status": "CONFIRMED",
-      "title": "Cartel leader captured; 11 dead in clash",
-      "summary": "Bloody northern Mexico firefight nets senior cartel figure. (AP)",
-      "lat": 25.68,
-      "lon": -100.31
+      "title": "Appeals court gives Trump hush-money exit",
+      "summary": "Federal appeals panel hands Trump legal path to erase conviction. (Guardian)",
+      "lat": 40.72,
+      "lon": -74.00
     }
   ],
   "briefs": [
@@ -164,7 +164,7 @@
     { "id": 18, "region": "EUROPE", "location": "Paris", "text": "Gisèle Pelicot sues over book nude photos", "lat": 48.85, "lon": 2.35 },
     { "id": 19, "region": "EUROPE", "location": "Helsinki", "text": "Finland summons Russian envoy on breach", "lat": 60.17, "lon": 24.94 },
     { "id": 20, "region": "N. AMERICA", "location": "Washington", "text": "DoJ admits citizen deported to Mexico", "lat": 38.90, "lon": -77.04 },
-    { "id": 21, "region": "N. AMERICA", "location": "New York", "text": "Court gives Trump hush-money exit path", "lat": 40.72, "lon": -74.00 },
+    { "id": 21, "region": "N. AMERICA", "location": "Ottawa", "text": "PM Carney roasts Trump at press dinner", "lat": 45.42, "lon": -75.70 },
     { "id": 22, "region": "N. AMERICA", "location": "Seattle", "text": "ICE airport arrests spark protests", "lat": 47.45, "lon": -122.31 },
     { "id": 23, "region": "S. AMERICA", "location": "Brasília", "text": "Ex-leader Bolsonaro in ICU with pneumonia", "lat": -15.80, "lon": -47.90 },
     { "id": 24, "region": "S. AMERICA", "location": "Bogotá", "text": "Colombia asks X to suspend Petro account", "lat": 4.71, "lon": -74.07 },
@@ -172,15 +172,15 @@
     { "id": 26, "region": "ASIA", "location": "Dushanbe", "text": "Tajikistan begins process to leave ICC", "lat": 38.56, "lon": 68.78 },
     { "id": 27, "region": "ASIA", "location": "Beijing", "text": "Official sentenced to death for spying", "lat": 39.90, "lon": 116.40 },
     { "id": 28, "region": "ASIA", "location": "Bangladesh", "text": "Rival party clashes & bombs injure 35+", "lat": 23.54, "lon": 89.17 },
-    { "id": 29, "region": "ASIA", "location": "Punjab", "text": "Stone truck overturns on van, killing 7", "lat": 31.52, "lon": 74.35 },
+    { "id": 29, "region": "ASIA", "location": "Punjab, PK", "text": "Stone truck overturns on van, killing 7", "lat": 31.52, "lon": 74.35 },
     { "id": 30, "region": "MIDDLE EAST", "location": "Tehran", "text": "Singer Parastoo Ahmadi gets 74 lashes", "lat": 35.69, "lon": 51.39 },
     { "id": 31, "region": "MIDDLE EAST", "location": "N. Iraq", "text": "Ankara says PKK quits 14 more bases", "lat": 36.85, "lon": 43.00 },
-    { "id": 32, "region": "AFRICA", "location": "Mogadishu", "text": "Somalia expels UAE envoy in row", "lat": 2.04, "lon": 45.32 },
+    { "id": 32, "region": "AFRICA", "location": "Yaoundé", "text": "Ex-rebels warn of broken peace pledges", "lat": 3.85, "lon": 11.50 },
     { "id": 33, "region": "OCEANIA", "location": "Sydney", "text": "Rental affordability crisis deepens", "lat": -33.87, "lon": 151.21 }
   ],
   "date_check_excluded": [
-    "Nov 21–22 excluded: Indonesia candy factory fire (started Sat Nov 21; Nov 23 toll update)",
-    "COP31 talks collapse (ended Sun Nov 22)",
-    "Trump meme-coin dinner (Sun Nov 22)"
+    "Nov 20–22 excluded: Mexico cartel raid (Nov 20–21)",
+    "Indonesia factory fire (Nov 21)",
+    "Benghazi Merkury strike & COP31 collapse (Nov 22)"
   ]
 }

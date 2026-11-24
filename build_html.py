@@ -319,21 +319,15 @@ def lead_svg(lead_id: int) -> str:
 def card_svg(card_id: int) -> str:
     # Full-bleed 190x72 (preserveAspectRatio="xMidYMid slice"), keeping y=0..24 clear for .mini-top overlay
     if card_id == 4:
-        # Benghazi harbor + Russian corvette Merkury + sea drone wake
+        # Somalia expels UAE envoy in sovereignty row
         return """<svg viewBox="0 0 190 72" width="190" height="72" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-  <rect width="190" height="72" fill="oklch(0.948 0.010 220)"/>
-  <path d="M0,56 L190,56 L190,72 L0,72 Z" fill="oklch(0.89 0.012 220)"/>
-  <g transform="translate(110,36)">
-    <polygon points="0,18 72,18 78,12 6,12" fill="oklch(0.32 0.010 60)"/>
-    <rect x="22" y="5" width="28" height="7" fill="oklch(0.42 0.010 60)"/>
-    <line x1="36" y1="5" x2="36" y2="-2" stroke="oklch(0.32 0.010 60)" stroke-width="1.4"/>
-    <circle cx="54" cy="14" r="5" fill="oklch(0.53 0.21 25 / 0.35)"/>
-    <circle cx="54" cy="14" r="2.2" fill="oklch(0.53 0.21 25)"/>
-  </g>
-  <path d="M0,52 Q52,44 102,50" fill="none" stroke="oklch(0.60 0.17 48)" stroke-width="1.6" stroke-dasharray="3,2"/>
-  <polygon points="94,48 104,50 94,52" fill="oklch(0.53 0.21 25)"/>
-  <text x="6" y="40" font-family="Roboto,sans-serif" font-size="13" font-weight="900" fill="oklch(0.28 0.010 60)">2,400 km</text>
-  <text x="6" y="66" font-family="Roboto,sans-serif" font-size="8" font-weight="700" fill="oklch(0.38 0.010 60)">7 sea drones · Merkury</text>
+  <rect width="190" height="72" fill="oklch(0.955 0.005 80)"/>
+  <path d="M116,28 L176,28 L160,52 L128,64 Z" fill="oklch(0.88 0.015 150)" stroke="oklch(0.46 0.13 150)" stroke-width="1"/>
+  <circle cx="144" cy="44" r="4" fill="oklch(0.53 0.21 25)"/>
+  <path d="M150,42 L176,34" stroke="oklch(0.53 0.21 25)" stroke-width="1.8" stroke-dasharray="3,2"/>
+  <polygon points="178,33 170,32 173,38" fill="oklch(0.53 0.21 25)"/>
+  <text x="6" y="42" font-family="Roboto,sans-serif" font-size="12" font-weight="900" fill="oklch(0.53 0.21 25)">ENVOY OUT</text>
+  <text x="6" y="57" font-family="Roboto,sans-serif" font-size="8.5" font-weight="700" fill="oklch(0.36 0.010 60)">Somalia–UAE row</text>
 </svg>"""
     if card_id == 5:
         # FIFA 2031 & 2035 Women's World Cup pitch + trophy
@@ -350,14 +344,14 @@ def card_svg(card_id: int) -> str:
   <text x="145.5" y="59" text-anchor="middle" font-family="Roboto,sans-serif" font-size="7.5" font-weight="700" fill="oklch(0.42 0.010 60)">UK 4-Nations</text>
 </svg>"""
     if card_id == 6:
-        # Himalayan mountains + flood relief bars + $1.6B
+        # Himalayan mountains shifted right so $1.6B sits 100% on clean light-gray background
         return """<svg viewBox="0 0 190 72" width="190" height="72" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
   <rect width="190" height="72" fill="oklch(0.955 0.005 80)"/>
-  <polygon points="82,62 116,28 148,62" fill="oklch(0.84 0.008 75)"/>
-  <polygon points="122,62 156,24 190,62" fill="oklch(0.76 0.008 75)"/>
-  <path d="M0,62 Q95,55 190,62 L190,72 L0,72 Z" fill="oklch(0.48 0.12 205 / 0.30)"/>
-  <text x="6" y="48" font-family="Roboto,sans-serif" font-size="22" font-weight="900" fill="oklch(0.60 0.17 48)">$1.6B</text>
-  <text x="6" y="61" font-family="Roboto,sans-serif" font-size="8.5" font-weight="700" fill="oklch(0.32 0.010 60)">Nepal flood aid</text>
+  <polygon points="104,63 130,32 156,63" fill="oklch(0.84 0.008 75)"/>
+  <polygon points="138,63 166,27 190,63" fill="oklch(0.76 0.008 75)"/>
+  <path d="M98,63 Q144,57 190,63 L190,72 L98,72 Z" fill="oklch(0.48 0.12 205 / 0.30)"/>
+  <text x="8" y="48" font-family="Roboto,sans-serif" font-size="22" font-weight="900" fill="oklch(0.60 0.17 48)">$1.6B</text>
+  <text x="8" y="61" font-family="Roboto,sans-serif" font-size="8.5" font-weight="700" fill="oklch(0.32 0.010 60)">Nepal flood aid</text>
 </svg>"""
     if card_id == 7:
         # Brazil economic target band & downward GDP step
@@ -407,17 +401,17 @@ def card_svg(card_id: int) -> str:
   <text x="6" y="59" font-family="Roboto,sans-serif" font-size="8" font-weight="700" fill="oklch(0.36 0.010 60)">06–20Z grounded</text>
 </svg>"""
     if card_id == 11:
-        # Asian Stocks Candlestick Sell-off
+        # Asian Stocks Candlestick Sell-off (raised so SEOUL · TOKYO SLIDE has clean margin)
         return """<svg viewBox="0 0 190 72" width="190" height="72" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
   <rect width="190" height="72" fill="oklch(0.955 0.005 80)"/>
   <g stroke="oklch(0.42 0.010 60)" stroke-width="1">
-    <line x1="20" y1="27" x2="20" y2="41"/><rect x="14" y="29" width="12" height="8" fill="oklch(0.48 0.12 205)"/>
-    <line x1="56" y1="31" x2="56" y2="47"/><rect x="50" y="33" width="12" height="10" fill="oklch(0.53 0.21 25)"/>
-    <line x1="94" y1="37" x2="94" y2="53"/><rect x="88" y="39" width="12" height="11" fill="oklch(0.53 0.21 25)"/>
-    <line x1="132" y1="41" x2="132" y2="59"/><rect x="126" y="44" width="12" height="12" fill="oklch(0.53 0.21 25)"/>
-    <line x1="170" y1="47" x2="170" y2="65"/><rect x="164" y="49" width="12" height="12" fill="oklch(0.53 0.21 25)"/>
+    <line x1="20" y1="26" x2="20" y2="37"/><rect x="14" y="28" width="12" height="6" fill="oklch(0.48 0.12 205)"/>
+    <line x1="56" y1="29" x2="56" y2="41"/><rect x="50" y="31" width="12" height="7" fill="oklch(0.53 0.21 25)"/>
+    <line x1="94" y1="33" x2="94" y2="46"/><rect x="88" y="35" width="12" height="8" fill="oklch(0.53 0.21 25)"/>
+    <line x1="132" y1="36" x2="132" y2="50"/><rect x="126" y="38" width="12" height="9" fill="oklch(0.53 0.21 25)"/>
+    <line x1="170" y1="40" x2="170" y2="54"/><rect x="164" y="42" width="12" height="9" fill="oklch(0.53 0.21 25)"/>
   </g>
-  <text x="6" y="64" font-family="Roboto,sans-serif" font-size="8" font-weight="800" fill="oklch(0.36 0.010 60)">SEOUL · TOKYO SLIDE</text>
+  <text x="6" y="65" font-family="Roboto,sans-serif" font-size="8.5" font-weight="800" fill="oklch(0.36 0.010 60)">SEOUL · TOKYO SLIDE</text>
 </svg>"""
     if card_id == 12:
         # DR Congo Ebola Clinic Tent + Perimeter
@@ -429,16 +423,19 @@ def card_svg(card_id: int) -> str:
   <text x="74" y="45" font-family="Roboto,sans-serif" font-size="11.5" font-weight="900" fill="oklch(0.53 0.21 25)">EBOLA ZONE</text>
   <text x="74" y="58" font-family="Roboto,sans-serif" font-size="8.5" font-weight="700" fill="oklch(0.36 0.010 60)">WHO staff trapped</text>
 </svg>"""
-    # Card 13: Mexico cartel capture + mountains + 11 dead
+    # Card 13: Appeals court ruling (light warm-paper background, gavel & docket)
     return """<svg viewBox="0 0 190 72" width="190" height="72" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
   <rect width="190" height="72" fill="oklch(0.955 0.005 80)"/>
-  <polygon points="94,64 124,35 152,64" fill="oklch(0.84 0.008 75)"/>
-  <polygon points="132,64 162,30 190,64" fill="oklch(0.78 0.008 75)"/>
-  <text x="6" y="48" font-family="Roboto,sans-serif" font-size="21" font-weight="900" fill="oklch(0.53 0.21 25)">11</text>
-  <text x="34" y="41" font-family="Roboto,sans-serif" font-size="8.5" font-weight="800" fill="oklch(0.30 0.010 60)">killed in</text>
-  <text x="34" y="51" font-family="Roboto,sans-serif" font-size="8.5" font-weight="800" fill="oklch(0.30 0.010 60)">cartel raid</text>
-  <rect x="122" y="47" width="60" height="15" rx="2" fill="oklch(0.30 0.010 60)"/>
-  <text x="152" y="57.5" text-anchor="middle" font-family="Roboto,sans-serif" font-size="8" font-weight="800" fill="oklch(0.985 0.004 80)">CAPTURED</text>
+  <!-- Court pillars & gavel on light background -->
+  <g transform="translate(116,28)">
+    <rect x="0" y="28" width="64" height="6" rx="1" fill="oklch(0.76 0.008 75)"/>
+    <rect x="8" y="8" width="8" height="20" fill="oklch(0.84 0.008 75)"/>
+    <rect x="28" y="8" width="8" height="20" fill="oklch(0.84 0.008 75)"/>
+    <rect x="48" y="8" width="8" height="20" fill="oklch(0.84 0.008 75)"/>
+    <polygon points="0,8 64,8 32,-1" fill="oklch(0.60 0.17 48)"/>
+  </g>
+  <text x="8" y="45" font-family="Roboto,sans-serif" font-size="13" font-weight="900" fill="oklch(0.53 0.21 25)">APPEAL</text>
+  <text x="8" y="59" font-family="Roboto,sans-serif" font-size="8.5" font-weight="700" fill="oklch(0.36 0.010 60)">NY hush-money ruling</text>
 </svg>"""
 
 
