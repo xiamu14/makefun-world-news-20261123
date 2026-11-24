@@ -92,7 +92,7 @@ ROBINSON_TABLE = [
 ]
 
 
-def project_robinson(lon: float, lat: float, w: float = 364.0, h: float = 148.0) -> tuple[float, float]:
+def project_robinson(lon: float, lat: float, w: float = 364.0, h: float = 166.0) -> tuple[float, float]:
     alat = min(89.9, abs(lat))
     idx = int(alat // 5)
     frac = (alat - idx * 5) / 5.0
@@ -102,8 +102,8 @@ def project_robinson(lon: float, lat: float, w: float = 364.0, h: float = 148.0)
     py = py0 + (py1 - py0) * frac
     if lat < 0:
         py = -py
-    x = w * 0.5 + (lon / 180.0) * px * (w * 0.475)
-    y = h * 0.54 - py * (h * 0.46)
+    x = w * 0.5 + (lon / 180.0) * px * (w * 0.485)
+    y = h * 0.55 - py * (h * 0.485)
     return round(x, 2), round(y, 2)
 
 
@@ -182,9 +182,9 @@ def render_world_map(all_items: list[dict]) -> str:
                 f'<circle cx="{x}" cy="{y}" r="3.1" fill="{col}" stroke="oklch(0.99 0.003 80)" stroke-width="0.9"/>'
             )
     return (
-        f'<svg viewBox="0 0 364 148" width="364" height="148" xmlns="http://www.w3.org/2000/svg">'
-        f'<rect width="364" height="148" rx="4" fill="oklch(0.945 0.010 220)"/>'
-        f'<line x1="8" y1="{eq_y}" x2="356" y2="{eq_y}" stroke="oklch(0.84 0.012 220)" stroke-width="0.5" stroke-dasharray="2,3"/>'
+        f'<svg viewBox="0 0 364 166" width="364" height="166" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">'
+        f'<rect width="364" height="166" rx="4" fill="oklch(0.945 0.010 220)"/>'
+        f'<line x1="6" y1="{eq_y}" x2="358" y2="{eq_y}" stroke="oklch(0.84 0.012 220)" stroke-width="0.5" stroke-dasharray="2,3"/>'
         f'{land_svg}{"".join(dots_svg)}</svg>'
     )
 
@@ -319,15 +319,17 @@ def lead_svg(lead_id: int) -> str:
 def card_svg(card_id: int) -> str:
     # Full-bleed 190x72 (preserveAspectRatio="xMidYMid slice"), keeping y=0..24 clear for .mini-top overlay
     if card_id == 4:
-        # Somalia expels UAE envoy in sovereignty row
+        # Spain Supreme Court grants Puigdemont amnesty
         return """<svg viewBox="0 0 190 72" width="190" height="72" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
   <rect width="190" height="72" fill="oklch(0.955 0.005 80)"/>
-  <path d="M116,28 L176,28 L160,52 L128,64 Z" fill="oklch(0.88 0.015 150)" stroke="oklch(0.46 0.13 150)" stroke-width="1"/>
-  <circle cx="144" cy="44" r="4" fill="oklch(0.53 0.21 25)"/>
-  <path d="M150,42 L176,34" stroke="oklch(0.53 0.21 25)" stroke-width="1.8" stroke-dasharray="3,2"/>
-  <polygon points="178,33 170,32 173,38" fill="oklch(0.53 0.21 25)"/>
-  <text x="6" y="42" font-family="Roboto,sans-serif" font-size="12" font-weight="900" fill="oklch(0.53 0.21 25)">ENVOY OUT</text>
-  <text x="6" y="57" font-family="Roboto,sans-serif" font-size="8.5" font-weight="700" fill="oklch(0.36 0.010 60)">Somalia–UAE row</text>
+  <g transform="translate(120,28)">
+    <rect x="0" y="29" width="60" height="5" rx="1" fill="oklch(0.76 0.008 75)"/>
+    <rect x="10" y="6" width="40" height="23" rx="2" fill="oklch(0.985 0.004 80)" stroke="oklch(0.45 0.15 255)" stroke-width="1.2"/>
+    <line x1="16" y1="13" x2="44" y2="13" stroke="oklch(0.60 0.17 48)" stroke-width="1.8"/>
+    <line x1="16" y1="20" x2="36" y2="20" stroke="oklch(0.72 0.008 75)" stroke-width="1.5"/>
+  </g>
+  <text x="8" y="44" font-family="Roboto,sans-serif" font-size="13" font-weight="900" fill="oklch(0.45 0.15 255)">AMNESTY</text>
+  <text x="8" y="59" font-family="Roboto,sans-serif" font-size="8.5" font-weight="700" fill="oklch(0.36 0.010 60)">2017 case closed</text>
 </svg>"""
     if card_id == 5:
         # FIFA 2031 & 2035 Women's World Cup pitch + trophy
@@ -582,11 +584,11 @@ def build_html() -> None:
   .page {{
     width: 1024px;
     height: 1024px;
-    padding: 5px 16px 4px;
+    padding: 4px 16px 4px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 5px;
+    gap: 4px;
   }}
   .eyebrow {{
     display: flex;
@@ -927,10 +929,15 @@ def build_html() -> None:
   }}
   .map-frame {{
     width: 364px;
-    height: 142px;
+    height: 166px;
     border: 1px solid var(--rule);
     border-radius: 4px;
     overflow: hidden;
+  }}
+  .map-frame svg {{
+    width: 100%;
+    height: 100%;
+    display: block;
   }}
   .map-legend {{
     display: flex;
@@ -978,7 +985,7 @@ def build_html() -> None:
   .brief-row {{
     font-size: 12px;
     line-height: 1.15;
-    padding: 3.8px 0;
+    padding: 4.5px 0;
     border-bottom: 1px solid var(--rule);
     white-space: nowrap;
     overflow: hidden;

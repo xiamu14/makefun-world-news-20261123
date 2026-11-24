@@ -57,13 +57,13 @@
   "cards": [
     {
       "id": 4,
-      "region": "AFRICA",
-      "location": "Mogadishu",
+      "region": "EUROPE",
+      "location": "Madrid",
       "status": "OFFICIAL",
-      "title": "Somalia expels UAE envoy in sovereignty row",
-      "summary": "Mogadishu orders UAE ambassador out as Somaliland dispute escalates. (AP)",
-      "lat": 2.04,
-      "lon": 45.32
+      "title": "Spain top court grants Puigdemont amnesty",
+      "summary": "Supreme Court clears exiled Catalan leader, closing 2017 case. (CNN)",
+      "lat": 40.42,
+      "lon": -3.70
     },
     {
       "id": 5,
@@ -82,8 +82,8 @@
       "status": "OFFICIAL",
       "title": "India pledges $1.6B for Nepal flood recovery",
       "summary": "New Delhi unveils major reconstruction package after devastating floods. (AP)",
-      "lat": 27.71,
-      "lon": 85.32
+      "lat": 28.61,
+      "lon": 77.21
     },
     {
       "id": 7,
@@ -157,7 +157,7 @@
     }
   ],
   "briefs": [
-    { "id": 14, "region": "EUROPE", "location": "Madrid", "text": "Top court grants amnesty to Puigdemont", "lat": 40.42, "lon": -3.70 },
+    { "id": 14, "region": "EUROPE", "location": "London", "text": "Ex-Prince Andrew $1.4m bribe told to court", "lat": 51.51, "lon": -0.13 },
     { "id": 15, "region": "EUROPE", "location": "Berlin", "text": "Intel probes Russia space-nuke reports", "lat": 52.52, "lon": 13.40 },
     { "id": 16, "region": "EUROPE", "location": "Copenhagen", "text": "Bomb emails hit DK & German schools", "lat": 55.67, "lon": 12.57 },
     { "id": 17, "region": "EUROPE", "location": "Brussels", "text": "EU warns of AI-driven Academy data leak", "lat": 50.84, "lon": 4.38 },
@@ -171,7 +171,7 @@
     { "id": 25, "region": "S. AMERICA", "location": "Montevideo", "text": "Uruguay delays CPTPP bid for talks", "lat": -34.90, "lon": -56.16 },
     { "id": 26, "region": "ASIA", "location": "Dushanbe", "text": "Tajikistan begins process to leave ICC", "lat": 38.56, "lon": 68.78 },
     { "id": 27, "region": "ASIA", "location": "Beijing", "text": "Official sentenced to death for spying", "lat": 39.90, "lon": 116.40 },
-    { "id": 28, "region": "ASIA", "location": "Bangladesh", "text": "Rival party clashes & bombs injure 35+", "lat": 23.54, "lon": 89.17 },
+    { "id": 28, "region": "ASIA", "location": "Pyongyang", "text": "N. Korea threatens to shut Swiss mission", "lat": 39.04, "lon": 125.76 },
     { "id": 29, "region": "ASIA", "location": "Punjab, PK", "text": "Stone truck overturns on van, killing 7", "lat": 31.52, "lon": 74.35 },
     { "id": 30, "region": "MIDDLE EAST", "location": "Tehran", "text": "Singer Parastoo Ahmadi gets 74 lashes", "lat": 35.69, "lon": 51.39 },
     { "id": 31, "region": "MIDDLE EAST", "location": "N. Iraq", "text": "Ankara says PKK quits 14 more bases", "lat": 36.85, "lon": 43.00 },
