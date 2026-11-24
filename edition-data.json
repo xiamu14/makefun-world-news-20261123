@@ -1,0 +1,186 @@
+{
+  "date_label": "MON 23 NOV 2026",
+  "edition_eyebrow": "EDITION NO. 2026-11-23 · 33 VERIFIED STORIES · 7 CONTINENTS + GLOBAL · CUTOFF 23:30 UTC",
+  "kpis": [
+    { "value": "+31.5%", "label": "Nvidia rebound", "region": "N. AMERICA" },
+    { "value": "15+ dead", "label": "Kyiv region strikes", "region": "EUROPE" },
+    { "value": "2,400 km", "label": "Ukraine strike to Libya", "region": "AFRICA" },
+    { "value": "$1.6B", "label": "India flood aid to Nepal", "region": "ASIA" },
+    { "value": "14 hrs", "label": "Belgium airport strike", "region": "EUROPE" },
+    { "value": "2031/35", "label": "FIFA Women's World Cups", "region": "GLOBAL" }
+  ],
+  "utc_timeline": [
+    { "time": "03:15", "label": "Asian stocks slide" },
+    { "time": "06:00", "label": "Belgian ATC strike" },
+    { "time": "08:00", "label": "Libya warship confirmed" },
+    { "time": "17:30", "label": "EU Russia sanctions" },
+    { "time": "21:10", "label": "Nvidia +31.5% rally" }
+  ],
+  "leads": [
+    {
+      "id": 1,
+      "region": "N. AMERICA",
+      "location": "New York, USA",
+      "status": "CONFIRMED",
+      "title": "Nvidia reinstates Huang as CEO; Wall Street surges",
+      "highlight": "reinstates Huang",
+      "highlight_tone": "orange",
+      "summary": "Nvidia jumps 31.5%, Nasdaq +6.5% and S&P +4.7% after White House talks back CEO return. (AP/ABC)",
+      "lat": 40.71,
+      "lon": -74.01
+    },
+    {
+      "id": 2,
+      "region": "EUROPE",
+      "location": "Brussels / Kyiv",
+      "status": "OFFICIAL",
+      "title": "EU unveils Russia sanctions as Kyiv strikes kill 15",
+      "highlight": "Russia sanctions",
+      "highlight_tone": "red",
+      "summary": "EU targets Russian banks, crypto & sports; overnight strikes hit Kyiv region & Perm refinery. (AP/AJ)",
+      "lat": 50.85,
+      "lon": 4.35
+    },
+    {
+      "id": 3,
+      "region": "MIDDLE EAST",
+      "location": "Strait of Hormuz",
+      "status": "CLAIM",
+      "title": "Iran claims US drone downed as new sanctions hit",
+      "highlight": "US drone downed",
+      "highlight_tone": "amber",
+      "summary": "Tehran vows 'all means' against US blockade as Washington adds Iran-tied sanctions. (Al Jazeera/AP)",
+      "lat": 26.56,
+      "lon": 56.25
+    }
+  ],
+  "cards": [
+    {
+      "id": 4,
+      "region": "AFRICA",
+      "location": "Benghazi",
+      "status": "CONFIRMED",
+      "title": "Kyiv confirms sea drones hit Russian ship",
+      "summary": "7 drones struck corvette Merkury 2,400 km from front; UN urges probe. (AP/UN)",
+      "lat": 32.12,
+      "lon": 20.07
+    },
+    {
+      "id": 5,
+      "region": "GLOBAL",
+      "location": "Zurich / FIFA",
+      "status": "CONFIRMED",
+      "title": "2031 & 2035 Women's World Cup hosts set",
+      "summary": "US-Mex-CR-Jam win 2031; UK home nations win 2035 4-way bid. (AFP)",
+      "lat": 47.37,
+      "lon": 8.54
+    },
+    {
+      "id": 6,
+      "region": "ASIA",
+      "location": "New Delhi",
+      "status": "OFFICIAL",
+      "title": "India pledges $1.6B for Nepal flood recovery",
+      "summary": "New Delhi unveils major reconstruction package after devastating floods. (AP)",
+      "lat": 27.71,
+      "lon": 85.32
+    },
+    {
+      "id": 7,
+      "region": "S. AMERICA",
+      "location": "Brasília, Brazil",
+      "status": "OFFICIAL",
+      "title": "Brazil cuts 2027 growth outlook to 1.8%",
+      "summary": "Forecast trimmed as inflation projection rises to top of target band. (MercoPress)",
+      "lat": -15.79,
+      "lon": -47.88
+    },
+    {
+      "id": 8,
+      "region": "OCEANIA",
+      "location": "Canberra",
+      "status": "OFFICIAL",
+      "title": "Wong warns US-China rivalry erodes rules",
+      "summary": "Australian FM says major-power friction weakens peace norms. (ABC AU)",
+      "lat": -35.28,
+      "lon": 149.13
+    },
+    {
+      "id": 9,
+      "region": "GLOBAL",
+      "location": "UN / New York",
+      "status": "OFFICIAL",
+      "title": "UN chief urges global AI safety pact in 1 yr",
+      "summary": "Guterres warns of historic power shift, seeks binding framework. (UN News)",
+      "lat": 40.75,
+      "lon": -73.97
+    },
+    {
+      "id": 10,
+      "region": "EUROPE",
+      "location": "Brussels",
+      "status": "CONFIRMED",
+      "title": "Strike shuts Belgian airports for 14 hours",
+      "summary": "Skeyes halts air traffic control 06:00–20:00 GMT over austerity. (AJ)",
+      "lat": 50.90,
+      "lon": 4.48
+    },
+    {
+      "id": 11,
+      "region": "ASIA",
+      "location": "Seoul / Tokyo",
+      "status": "CONFIRMED",
+      "title": "Asian stocks tumble on AI bubble fears",
+      "summary": "South Korea and regional tech shares slide ahead of US rally. (Al Jazeera)",
+      "lat": 37.56,
+      "lon": 126.97
+    },
+    {
+      "id": 12,
+      "region": "AFRICA",
+      "location": "Ituri, DR Congo",
+      "status": "OFFICIAL",
+      "title": "Fighting traps Ebola responders in Congo",
+      "summary": "WHO warns clashes near hospital put patients and staff at grave risk. (UN)",
+      "lat": 1.56,
+      "lon": 30.25
+    },
+    {
+      "id": 13,
+      "region": "N. AMERICA",
+      "location": "N. Mexico",
+      "status": "CONFIRMED",
+      "title": "Cartel leader captured; 11 dead in clash",
+      "summary": "Bloody northern Mexico firefight nets senior cartel figure. (AP)",
+      "lat": 25.68,
+      "lon": -100.31
+    }
+  ],
+  "briefs": [
+    { "id": 14, "region": "EUROPE", "location": "Madrid", "text": "Top court grants amnesty to Puigdemont", "lat": 40.42, "lon": -3.70 },
+    { "id": 15, "region": "EUROPE", "location": "Berlin", "text": "Intel probes Russia space-nuke reports", "lat": 52.52, "lon": 13.40 },
+    { "id": 16, "region": "EUROPE", "location": "Copenhagen", "text": "Bomb emails hit DK & German schools", "lat": 55.67, "lon": 12.57 },
+    { "id": 17, "region": "EUROPE", "location": "Brussels", "text": "EU warns of AI-driven Academy data leak", "lat": 50.84, "lon": 4.38 },
+    { "id": 18, "region": "EUROPE", "location": "Paris", "text": "Gisèle Pelicot sues over book nude photos", "lat": 48.85, "lon": 2.35 },
+    { "id": 19, "region": "EUROPE", "location": "Helsinki", "text": "Finland summons Russian envoy on breach", "lat": 60.17, "lon": 24.94 },
+    { "id": 20, "region": "N. AMERICA", "location": "Washington", "text": "DoJ admits citizen deported to Mexico", "lat": 38.90, "lon": -77.04 },
+    { "id": 21, "region": "N. AMERICA", "location": "New York", "text": "Court gives Trump hush-money exit path", "lat": 40.72, "lon": -74.00 },
+    { "id": 22, "region": "N. AMERICA", "location": "Seattle", "text": "ICE airport arrests spark protests", "lat": 47.45, "lon": -122.31 },
+    { "id": 23, "region": "S. AMERICA", "location": "Brasília", "text": "Ex-leader Bolsonaro in ICU with pneumonia", "lat": -15.80, "lon": -47.90 },
+    { "id": 24, "region": "S. AMERICA", "location": "Bogotá", "text": "Colombia asks X to suspend Petro account", "lat": 4.71, "lon": -74.07 },
+    { "id": 25, "region": "S. AMERICA", "location": "Montevideo", "text": "Uruguay delays CPTPP bid for talks", "lat": -34.90, "lon": -56.16 },
+    { "id": 26, "region": "ASIA", "location": "Dushanbe", "text": "Tajikistan begins process to leave ICC", "lat": 38.56, "lon": 68.78 },
+    { "id": 27, "region": "ASIA", "location": "Beijing", "text": "Official sentenced to death for spying", "lat": 39.90, "lon": 116.40 },
+    { "id": 28, "region": "ASIA", "location": "Bangladesh", "text": "Rival party clashes & bombs injure 35+", "lat": 23.54, "lon": 89.17 },
+    { "id": 29, "region": "ASIA", "location": "Punjab", "text": "Stone truck overturns on van, killing 7", "lat": 31.52, "lon": 74.35 },
+    { "id": 30, "region": "MIDDLE EAST", "location": "Tehran", "text": "Singer Parastoo Ahmadi gets 74 lashes", "lat": 35.69, "lon": 51.39 },
+    { "id": 31, "region": "MIDDLE EAST", "location": "N. Iraq", "text": "Ankara says PKK quits 14 more bases", "lat": 36.85, "lon": 43.00 },
+    { "id": 32, "region": "AFRICA", "location": "Mogadishu", "text": "Somalia expels UAE envoy in row", "lat": 2.04, "lon": 45.32 },
+    { "id": 33, "region": "OCEANIA", "location": "Sydney", "text": "Rental affordability crisis deepens", "lat": -33.87, "lon": 151.21 }
+  ],
+  "date_check_excluded": [
+    "Nov 21–22 excluded: Indonesia candy factory fire (started Sat Nov 21; Nov 23 toll update)",
+    "COP31 talks collapse (ended Sun Nov 22)",
+    "Trump meme-coin dinner (Sun Nov 22)"
+  ]
+}
